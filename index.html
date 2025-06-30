@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>DANIEL RDZ.</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                   <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    <div class="img-txt-wrapper">
+                        <div class="logo-wrapper">
+                            <h1><a href="https://danirdz.github.io/devCamp-fries/">DEVCamp Fries</a></h1>
+                        </div>
+                        <div class="subtitle">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            portfolioItem.childNodes[1].classList.add('img-darken');
+            
+        })
+        portfolioItem.addEventListener('mouseout', () =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+            
+        })
+    });
+</script>
+</html>

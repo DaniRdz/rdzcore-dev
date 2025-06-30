@@ -1,0 +1,91 @@
+/* master styles */
+body{
+    margin: 0px;
+    font-family: 'Lato',serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.nav-wrapper > .left-side {
+    display: flex;
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: .98em;
+    text-transform: uppercase;
+}
+.nav-wrapper > .left-side > .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-wrapper > .left-side > .nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-wrapper > .left-side > .nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+.nav-wrapper > .left-side > .nav-link-wrapper a:hover {
+    color: black;
+}
+.nav-wrapper > .left-side > .active-nav-link{
+    border-bottom: 1px solid black;
+}
+.nav-wrapper > .left-side > .active-nav-link a{
+    color: black !important;
+}
+/* portfolio styles */
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper a{
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper > .subtitle{
+    font-weight: 600;
+    transition: 1s;
+    color:transparent;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper:hover > .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
