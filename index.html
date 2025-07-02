@@ -48,5 +48,18 @@
             </div>
         </div>
     </div>
+    <script>
+        const toogleBtn = document.querySelector('.toggle-btn')
+        const toogleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDowMenu = document.querySelector('.dropdown-menu')
+        toogleBtn.onclick = function () {
+            dropDowMenu.classList.toggle('open')
+            const isOpen = dropDowMenu.classList.contains("open")
+
+            toogleBtnIcon.classList = isOpen 
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars"
+        }
+    </script>
 </body>
 </html>
