@@ -9,57 +9,21 @@
 </head>
 <body>
     <div class="container hero">
-        <div>
-            <div class="nav-wrapper">
-                <div class="left-side">
-                    <div class="brand">
-                        <div>DANIEL RDZ.</div>
-                    </div>
-                </div>
-                <div class="right-side">
-                    <div class="nav-link-wrapper active-nav-link">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="services.html">Services</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
-                </div> 
-            </div>
-            <div class="dropdown-menu">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="services.html">Services</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
+        <header>
+            <div id="navbar"></div>
+        </header>
     </div>
-    <script>
-        const toogleBtn = document.querySelector('.toggle-btn')
-        const toogleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDowMenu = document.querySelector('.dropdown-menu')
-        toogleBtn.onclick = function () {
-            dropDowMenu.classList.toggle('open')
-            const isOpen = dropDowMenu.classList.contains("open")
 
-            toogleBtnIcon.classList = isOpen 
-                ? "fa-solid fa-xmark"
-                : "fa-solid fa-bars"
-        }
+    <script>
+      fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data
+        
+          const script = document.createElement('script');
+          script.src = 'navbar.js';
+          document.body.appendChild(script);
+        })
     </script>
 </body>
 </html>
