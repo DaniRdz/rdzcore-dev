@@ -143,6 +143,21 @@ section#hero{
     transition: 1s;
     filter: brightness(10%);
 }
+
+/* About page Style */
+.two-colums-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.two-colums-wrapper > .profile-image-wrapper img{
+    width: 100%;
+}
+.two-colums-wrapper > .profile-content-wrapper{
+    padding: 30px;
+}
+.two-colums-wrapper > .profile-content-wrapper h1{
+    color: lightseagreen;
+}
 /* Responsive */
 @media(max-width: 992px){
     .nav-wrapper > .right-side > .nav-link-wrapper {
