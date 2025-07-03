@@ -158,6 +158,30 @@ section#hero{
 .two-colums-wrapper > .profile-content-wrapper h1{
     color: lightseagreen;
 }
+/* Contact Styles */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: lightseagreen;
+}
+
 /* Responsive */
 @media(max-width: 992px){
     .nav-wrapper > .right-side > .nav-link-wrapper {
