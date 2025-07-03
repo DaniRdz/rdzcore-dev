@@ -159,6 +159,13 @@ section#hero{
     color: lightseagreen;
 }
 /* Contact Styles */
+
+.content-wrapper-contact {
+    display: grid;
+    text-align: center;
+    height: calc(100vh - 99px);
+    align-items: center;
+}
 .contact-section {
   display: flex;
   flex-direction: column;
