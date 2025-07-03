@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +14,41 @@
             <div id="navbar"></div>
         </header>
         <div class="content-wrapper">
-            <h1>Services and projects</h1>
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    <div class="img-txt-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Some Logo</h1>
+                        </div>
+                        <div class="subtitle">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    <div class="img-txt-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Some Logo</h1>
+                        </div>
+                        <div class="subtitle">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+                    <div class="img-txt-wrapper">
+                        <div class="logo-wrapper">
+                            <h1>Some Logo</h1>
+                        </div>
+                        <div class="subtitle">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -26,6 +61,19 @@
           script.src = 'navbar.js';
           document.body.appendChild(script);
         })
+
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            portfolioItem.childNodes[1].classList.add('img-darken')
+            
+        })
+        portfolioItem.addEventListener('mouseout', () =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+            
+        })
+    });
     </script>
 </body>
 </html>
