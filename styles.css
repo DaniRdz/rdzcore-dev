@@ -124,7 +124,7 @@ section#hero{
 /* portfolio styles */
 .portfolio-items-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .portfolio-items-wrapper > .portfolio-item-wrapper{
     position: relative;
@@ -151,6 +151,9 @@ section#hero{
 .portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper h1{
     color: white;
     margin-bottom: 20px;
+}
+.portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper a{
+    text-decoration: none;
 }
 .portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper > .subtitle{
     font-weight: 600;
@@ -225,11 +228,17 @@ section#hero{
     .media-links{
         width: 50%;
     }
+    .portfolio-items-wrapper{
+    grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media(max-width: 576px){
     .dropdown-menu {
        left: 2rem;
        width: unset;
+    }
+    .portfolio-items-wrapper{
+    grid-template-columns: 1fr;
     }
 }
