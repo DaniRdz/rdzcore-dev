@@ -239,6 +239,13 @@ section#hero{
        width: unset;
     }
     .portfolio-items-wrapper{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .portfolio-items-wrapper > .portfolio-item-wrapper > .img-txt-wrapper > .subtitle{
+        font-weight: 600;
+        color: lightseagreen;
+    }
+    .portfolio-items-wrapper > .portfolio-item-wrapper > .portfolio-img-background{
+        filter: brightness(35%);
     }
 }
