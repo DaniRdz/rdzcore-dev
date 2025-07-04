@@ -93,10 +93,32 @@ section#hero{
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: calc(100vh - 99px);
 }
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+.highlight {
+  font-weight: bold;
+  color: lightseagreen;
+}
+.media-links{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.media-links a {
+  color: #8a8a8a;
+  font-size: 2rem;
+  transition: color 0.5s, transform 0.3s ease;
+}
+
+.media-links a:hover {
+  color: black;
+  transform: scale(1.30);
 }
 
 /* portfolio styles */
@@ -199,6 +221,9 @@ section#hero{
     }
     .dropdown-menu {
         display: block;
+    }
+    .media-links{
+        width: 50%;
     }
 }
 

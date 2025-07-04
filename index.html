@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container hero">
         <header>
@@ -15,24 +19,36 @@
         </header>
         <main>
             <section id="hero">
-                <h1>Welcome</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Magni, consequatur.
-                </p>
+                <div class="salute">
+                    <h1>Welcome! - Willkommen! - ¡Bienvenido!</h1>
+                </div>
+                <div class="about-me">
+                    <p>
+                        <span class="highlight">I'm Daniel.</span> I write code, chase possibilities... and yes, <br>
+                        <span class="highlight">I do talk to my rubber duck.</span>
+                    </p>
+                </div>
+                <div class="media-links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </section>
         </main>
     </div>
 
     <script>
-      fetch('navbar.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data
-        
-          const script = document.createElement('script');
-          script.src = 'navbar.js';
-          document.body.appendChild(script);
-        })
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data
+
+                const script = document.createElement('script');
+                script.src = 'navbar.js';
+                document.body.appendChild(script);
+            })
     </script>
 </body>
+
 </html>
