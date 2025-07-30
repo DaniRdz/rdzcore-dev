@@ -1,61 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>About</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- Favicon clásico -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <!-- Favicons modernos -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <!-- Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/icons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/icons/android-chrome-512x512.png"
+    />
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <!-- Manifest -->
+    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <div id="navbar"></div>
-        </header>
-        <div class="content-wrapper">
-            <div class="two-colums-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="./images/goran-ivos-iOykDIkZLQw-unsplash.jpg" alt="">
-                </div>
-                <div class="profile-content-wrapper">
-                    <h1>Hello world!</h1>
-                    <p>I'm Daniel, a Software Engineer at IBM. I love pizza, tacos, programming — and somehow, life
-                        nudged me into System Administration too.</p>
+      <header>
+        <div id="navbar"></div>
+      </header>
+      <div class="content-wrapper">
+        <div class="two-colums-wrapper">
+          <div class="profile-image-wrapper">
+            <img src="./images/goran-ivos-iOykDIkZLQw-unsplash.jpg" alt="" />
+          </div>
+          <div class="profile-content-wrapper">
+            <h1>Hello world!</h1>
+            <p>
+              I'm Daniel, a Software Engineer at IBM. I love pizza, tacos,
+              programming — and somehow, life nudged me into System
+              Administration too.
+            </p>
 
-                    <p>I have solid experience with both Linux and Windows, and I use Bash to automate tasks on the
-                        Linux side.</p>
+            <p>
+              I have solid experience with both Linux and Windows, and I use
+              Bash to automate tasks on the Linux side.
+            </p>
 
-                    <p>I'm passionate about both frontend and backend development — so yes, I can be a Full Stack dev
-                        (just don't expect me to run the whole IT department 😅).</p>
+            <p>
+              I'm passionate about both frontend and backend development — so
+              yes, I can be a Full Stack dev (just don't expect me to run the
+              whole IT department 😅).
+            </p>
 
-                    <p>My main stack is MERN, though I sometimes swap out the backend for Flask depending on the
-                        project.</p>
+            <p>
+              My main stack is MERN, though I sometimes swap out the backend for
+              Flask depending on the project.
+            </p>
 
-                    <p>One day I learned Python... and never let it go.</p>
+            <p>One day I learned Python... and never let it go.</p>
 
-                    <p>I also work in DevOps, using tools like Jenkins for CI/CD, and I hold an AWS Certified Cloud
-                        Practitioner certification. Cloud workflows? Bring ’em on.</p>
-
-                </div>
-            </div>
+            <p>
+              I also work in DevOps, using tools like Jenkins for CI/CD, and I
+              hold an AWS Certified Cloud Practitioner certification. Cloud
+              workflows? Bring ’em on.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <script>
-        fetch('navbar.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
 
-                const script = document.createElement('script');
-                script.src = 'navbar.js';
-                document.body.appendChild(script);
-            })
+          const script = document.createElement("script");
+          script.src = "navbar.js";
+          document.body.appendChild(script);
+        });
     </script>
-</body>
-
+  </body>
 </html>

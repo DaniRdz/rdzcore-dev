@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <!-- Favicon clásico -->
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <!-- Favicons modernos -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <!-- Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/icons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/assets/icons/android-chrome-512x512.png"
+    />
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <!-- Manifest -->
+    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-       <header>
-            <div id="navbar"></div>
-       </header>
-        <div class="content-wrapper-contact">
-              <section class="contact-section">
-                <div class="contact-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>Zapopan, Jalisco, México (Working Remote)</span>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-phone-alt"></i>
-                  <span>+52 33 112 28671</span>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-envelope"></i>
-                  <span>daniel.rod.core@gmail.com</span>
-                </div>
-              </section>
-        </div>
+      <header>
+        <div id="navbar"></div>
+      </header>
+      <div class="content-wrapper-contact">
+        <section class="contact-section">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Zapopan, Jalisco, México (Working Remote)</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+52 33 112 28671</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>daniel.rod.core@gmail.com</span>
+          </div>
+        </section>
+      </div>
     </div>
     <script>
-      fetch('navbar.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data
-          
-          const script = document.createElement('script');
-          script.src = 'navbar.js';
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+
+          const script = document.createElement("script");
+          script.src = "navbar.js";
           document.body.appendChild(script);
-        })
+        });
     </script>
-</body>
+  </body>
 </html>
